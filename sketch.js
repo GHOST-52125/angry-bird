@@ -36,6 +36,9 @@ function setup(){
 
     bird = new Bird(100,100);
 
+    box=new Box(250,350,50,50);
+    chain=new String(bird.body,box.body);
+
 }
 
 function draw(){
@@ -59,6 +62,8 @@ function draw(){
     log4.display();
     log5.display();
 
-    bird.display();
     platform.display();
+    bird.display();
+    box.display();
+    chain.display();
 }
